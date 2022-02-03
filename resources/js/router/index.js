@@ -14,6 +14,7 @@ import FlightsIndex from '../components/flights/FlightsIndex';
 import FlightShow from '../components/flights/FlightShow';
 import FlightCreate from '../components/flights/FlightCreate';
 import FlightEdit from '../components/flights/FlightEdit';
+import RemarksIndex from '../components/remarks/RemarksIndex';
 
 const routes = [
     {
@@ -90,6 +91,28 @@ const routes = [
         name: 'flights.edit',
         path: '/flights/:id/edit',
         component: FlightEdit,
+        props: true
+    },
+    {
+        name: 'remarks.index',
+        path: '/remarks',
+        component: RemarksIndex,
+    },
+    {
+        name: 'remarks.create',
+        path: '/remarks/create',
+        component: RemarksIndex,
+    },
+    {
+        name: 'remarks.edit',
+        path: '/remarks/:id/edit',
+        component: RemarksIndex,
+        props: true
+    },
+    {
+        name: 'remarks.show',
+        path: '/remarks/:id/edit',
+        component: RemarksIndex,
         props: true
     },
 ]

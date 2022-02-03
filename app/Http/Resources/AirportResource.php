@@ -6,8 +6,6 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class AirportResource extends JsonResource
 {
-    public $preserveKeys = true;
-
     public function toArray($request)
     {
         return [

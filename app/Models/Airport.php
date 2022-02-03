@@ -20,4 +20,9 @@ class Airport extends Model
         'updated_at',
     ];
 
+    public function flights()
+    {
+        return $this->hasMany(Flight::class);
+    }
+
 }

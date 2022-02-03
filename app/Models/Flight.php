@@ -40,4 +40,9 @@ class Flight extends Model
     {
         return $this->belongsTo(Airport::class);
     }
+
+    public function remarks()
+    {
+        return $this->morphMany(Remark::class, 'remarkable');
+    }
 }

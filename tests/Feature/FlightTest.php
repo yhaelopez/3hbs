@@ -96,7 +96,7 @@ class FlightTest extends TestCase
         ]);
     }
 
-    public function test_can_update_airport()
+    public function test_can_update_flights()
     {
         $this->withoutExceptionHandling();
 
@@ -136,7 +136,7 @@ class FlightTest extends TestCase
         ]);
     }
 
-    public function test_can_delete_airport()
+    public function test_can_delete_flights()
     {
         $this->withoutExceptionHandling();
 

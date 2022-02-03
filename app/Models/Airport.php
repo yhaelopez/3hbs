@@ -25,4 +25,8 @@ class Airport extends Model
         return $this->hasMany(Flight::class);
     }
 
+    public function remarks()
+    {
+        return $this->morphMany(Remark::class, 'remarkable');
+    }
 }

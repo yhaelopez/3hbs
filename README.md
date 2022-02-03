@@ -4,7 +4,7 @@
 - Copiar .env.example a .env con sus propios accesos a base de datos limpia
 
 - Ejecutar composer install
-- Ejecutar php artisam migrate:fresh --seed
+- Ejecutar php artisan migrate:fresh --seed
 - Ejecutar php artisan passport:install --force
 - Ejecutar php artisan ser
 - Ejecutar php artisan test (consola aparte)

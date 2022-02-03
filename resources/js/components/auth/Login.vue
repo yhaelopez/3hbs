@@ -1,9 +1,6 @@
 <template>
     <div class="container">
         <div class="row justify-content-center">
-            <!-- <div class="col-md-8 mt-2 mb-5 text-sm text-danger" v-if="errors !== ''">
-                {{ errors }}
-            </div> -->
             <div class="col-md-8">
 
                 <div class="card">

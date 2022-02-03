@@ -14,10 +14,7 @@ class RemarkFactory extends Factory
      */
     public function definition()
     {
-        $remarkable = Airport::factory()->create();
         return [
-            'remarkable_id' => $remarkable->id,
-            'remarkable_type' => $remarkable::class,
             'comment' => $this->faker->text(),
         ];
     }

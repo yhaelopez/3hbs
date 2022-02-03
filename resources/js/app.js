@@ -3,6 +3,10 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import routes from './routes';
+import VueRouter from 'vue-router';
+
+import App from './components/App.vue';
 
 require('./bootstrap');
 
@@ -27,6 +31,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+ const router = new VueRouter({
+    mode: 'history',
+    routes: routes
+});
+
 const app = new Vue({
     el: '#app',
+    render: h => h(App),
+    router: router,
 });

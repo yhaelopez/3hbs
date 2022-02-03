@@ -10,6 +10,10 @@ import AirlinesIndex from '../components/airlines/AirlinesIndex';
 import AirlineShow from '../components/airlines/AirlineShow';
 import AirlineCreate from '../components/airlines/AirlineCreate';
 import AirlineEdit from '../components/airlines/AirlineEdit';
+import FlightsIndex from '../components/flights/FlightsIndex';
+import FlightShow from '../components/flights/FlightShow';
+import FlightCreate from '../components/flights/FlightCreate';
+import FlightEdit from '../components/flights/FlightEdit';
 
 const routes = [
     {
@@ -64,6 +68,28 @@ const routes = [
         name: 'airlines.edit',
         path: '/airlines/:id/edit',
         component: AirlineEdit,
+        props: true
+    },
+    {
+        name: 'flights.index',
+        path: '/flights',
+        component: FlightsIndex,
+    },
+    {
+        name: 'flights.create',
+        path: '/flights/create',
+        component: FlightCreate,
+    },
+    {
+        name: 'flights.show',
+        path: '/flights/:id',
+        component: FlightShow,
+        props: true
+    },
+    {
+        name: 'flights.edit',
+        path: '/flights/:id/edit',
+        component: FlightEdit,
         props: true
     },
 ]

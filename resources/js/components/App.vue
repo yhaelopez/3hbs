@@ -20,6 +20,12 @@
                         <li class="nav-item">
                             <router-link class="nav-link" :to='{name: "airlines.index"}'>Airlines</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to='{name: "flights.index"}'>Flights</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to='{name: "remarks.index"}'>Remarks</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
